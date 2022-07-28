@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Google fonts -->
+    <!-- Google fonts end -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body>
+    <!-- Navbar Start -->
     <header>
         <nav class="shadow-sm">
             <div class="container mx-auto flex flex-wrap items-center justify-between">
@@ -28,8 +30,8 @@
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8h-8 mx-4 mx-auto toggle hidden" viewBox="0 0 20 20"
-                            fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8h-8 mx-4 mx-auto toggle hidden"
+                            viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                                 clip-rule="evenodd" />
@@ -37,17 +39,102 @@
                     </button>
                 </div>
                 <div class="toggle hidden w-full md:w-auto md:flex text-bold mt-5 md:mt-0">
-                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">Home</a>
-                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">Corses</a>
-                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">Feedback</a>
-                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">FAQ</a> 
+                    <a href="#"
+                        class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-indigo-500 px-3 py-3">Home</a>
+                    <a href="#"
+                        class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-indigo-500 px-3 py-3">Corses</a>
+                    <a href="#"
+                        class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-indigo-500 px-3 py-3">Feedback</a>
+                    <a href="#"
+                        class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-indigo-500 px-3 py-3">FAQ</a>
                 </div>
-                <a href="#" class=" md:order-1 shadow-sm my-1 sm:shadow-sm sm:my-0 toggle sm:hidden hidden md:inline-block w-full md:w-auto px-3 hover:text-blue-500 md:rounded md:border-blue-300 md:border-2 md:py-2 md:px-5">Signup</a>
-               
+                <a href="#"
+                    class=" md:order-1 shadow-sm my-1 sm:shadow-sm sm:my-0 toggle sm:hidden hidden md:inline-block w-full md:w-auto px-3 hover:text-indigo-500 md:rounded md:border-indigo-300 md:border-2 md:py-2 md:px-5">Signup</a>
+
             </div>
         </nav>
+        <!-- Navbar end -->
+
+        <!-- Slider area -->
+
+        <section>
+            <div id="carouselExampleCrossfade" class="my-10 container mx-auto carousel slide carousel-fade relative"
+                data-bs-ride="carousel">
+
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full">
+                        <div
+                            class=" block w-full bg-[url('../images/cover/cover-1.png')] bg-cover bg-center   h-[500px]">
+                            <div class="bg-[#00000063]   h-[500px] flex justify-center items-center">
+                                <div class="w-9/12 flex flex-col gap-3 justify-center items-center text-center">
+                                    <h1 class="text-2xl sm:text-4xl md:text-5xl font-semibold text-white">Start learning
+                                        from <br>
+                                        <span class="text-indigo-600 capitalize">the world’s best institutions</span>
+                                    </h1>
+                                    <p class="text-white ">Oxford Executive
+                                        Leadership Programme</p>
+                                    <a href="#" class="inline-block py-2 px-6   bg-indigo-500 text-white">Get Started</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item float-left w-full">
+                        <div
+                            class=" block w-full bg-[url('../images/cover/cover-2.jpg')] bg-cover bg-center   h-[500px]">
+                            <div class="bg-[#00000063]   h-[500px] flex justify-center items-center">
+                                <div class="w-9/12 flex flex-col gap-3 justify-center items-center text-center">
+                                    <h1 class="text-2xl sm:text-4xl md:text-5xl font-semibold text-white">Start learning
+                                        from <br>
+                                        <span class="text-indigo-600 capitalize">the world’s best institutions</span>
+                                    </h1>
+                                    <p class="  text-white">Higher Education
+                                        Teaching Certificate</p>
+                                    <a href="#" class="inline-block py-2 px-6   bg-indigo-500 text-white">Get Started</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item float-left w-full ">
+                        <div
+                            class=" block w-full bg-[url('../images/cover/cover-3.jpg')] bg-cover bg-center  h-[500px]">
+                            <div class="bg-[#00000063]  h-[500px] flex justify-center items-center">
+                                <div class="w-9/12 flex flex-col gap-3 justify-center items-center text-center ">
+                                    <h1 class="text-2xl sm:text-4xl md:text-5xl font-semibold text-white">Start learning
+                                        from <br>
+                                        <span class="text-indigo-600 capitalize">the world’s best institutions</span>
+                                    </h1>
+                                    <p class="  text-white ">Blockchain Technologies: Business Innovation and
+                                        Application Online Short Course</p>
+                                    <a href="#" class="inline-block py-2 px-6   bg-indigo-500 text-white">Get Started</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0   border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0   border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Slider area end -->
     </header>
 
+
+    <!-- Navbar Js -->
     <script>
         document.getElementById("navbar").onclick = function toggleMenu() {
             const navToggle = document.getElementsByClassName("toggle");
@@ -56,6 +143,12 @@
             }
         };
     </script>
+    <!-- Navbar Js -->
+
+    <!-- Plugin js -->
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 
 </html>
