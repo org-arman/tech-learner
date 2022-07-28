@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tech Learner</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
+
 <body>
-    <h2>Hello</h2>
+    <header>
+        <nav class="shadow-sm">
+            <div class="container mx-auto flex flex-wrap items-center justify-between">
+                <a href="#">
+                    <img src="./images/logo.png" class="w-64" alt="">
+                </a>
+                <div class="flex md:hidden">
+                    <button id="navbar">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8h-8 mx-4 mx-auto toggle block" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8h-8 mx-4 mx-auto toggle hidden" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="toggle hidden w-full md:w-auto md:flex text-bold mt-5 md:mt-0">
+                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">Home</a>
+                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">Corses</a>
+                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">Feedback</a>
+                    <a href="#" class="shadow-sm my-1 sm:shadow-none sm:my-0 block md:inline-block hover:text-blue-500 px-3 py-3">FAQ</a> 
+                </div>
+                <a href="#" class=" md:order-1 shadow-sm my-1 sm:shadow-sm sm:my-0 toggle sm:hidden hidden md:inline-block w-full md:w-auto px-3 hover:text-blue-500 md:rounded md:border-blue-300 md:border-2 md:py-2 md:px-5">Signup</a>
+               
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById("navbar").onclick = function toggleMenu() {
+            const navToggle = document.getElementsByClassName("toggle");
+            for (let i = 0; i < navToggle.length; i++) {
+                navToggle.item(i).classList.toggle("hidden");
+            }
+        };
+    </script>
 </body>
+
 </html>
