@@ -1985,6 +1985,14 @@ textarea.form-control.is-invalid {
   transform: none;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
@@ -4683,6 +4691,10 @@ body{
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-lg {
